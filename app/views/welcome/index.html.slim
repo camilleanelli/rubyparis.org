@@ -1,32 +1,36 @@
 - description t('.description')
 
 .section.section-page.section-showoff
-  .container
+  .container.text-center
     header
       h1 = t('.show-off.title')
 
     .row
       .col-sm-3.col-sm-offset-2
         .block
+          = image_tag "rubyicon.svg", height: 50
+          = toto
           = mustdown t('.show-off.members_count'), members: members_count
       .col-sm-3.col-sm-offset-2
         .block
+          = image_tag "rubyicon.svg", height: 50
           p = t('.show-off.active_members')
+  
 
 .section.section-ellipsis
-  .container
+  .container.text-center
     h1 = t('.ellipsis.title')
 
 .section.section-talks
-  .container
+  .container.text-center
     header
       h1 = t('.talks.title')
       p = t('.talks.subtitle')
 
-    p = link_to t('.talks.videos'), videos_path, class: 'btn btn-default btn-lg'
+    p = link_to t('.talks.videos'), videos_path, class: 'btn-landingpage-red'
 
 .section.section-jobs
-  .container
+  .container.text-center
     header
       h1 = t('.jobs.title')
       p = t('.jobs.subtitle')
@@ -34,10 +38,14 @@
     #jobsList.row.jobsList
 
     p.text-center
-      = link_to t('.jobs.add'), "https://jobs.rubyparis.org/job_offers/new", class: "btn btn-default btn-lg"
+      .row
+        .col-xs-12.col-sm-3.col-sm-offset-3.button-jobs
+          = link_to t('.jobs.add'), "https://jobs.rubyparis.org/job_offers/new", class: "btn-landingpage-white"
+        .col-xs-12.col-sm-3.button-jobs
+          = link_to "Tous les jobs", "https://jobs.rubyparis.org/fr/job_offers", class: "btn-landingpage-white"
 
 .section.section-sponsors
-  .container
+  .container.text-center
     header
       h1 = t('.sponsors.title')
       p = t('.sponsors.subtitle')
@@ -52,14 +60,14 @@
 
 
 .section.section-you
-  .container
+  .container.text-center
     header
       h1 = t('.you.title')
 
-    p = link_to t('.you.give_a_talk'), talks_path, class: 'btn btn-default btn-lg'
+    p = link_to t('.you.give_a_talk'), talks_path, class: 'btn-landingpage-white'
 
 .section.section-guests
-  .container
+  .container.text-center
     header
       h1 = t('.guests.title')
 
@@ -69,6 +77,6 @@
           .col-sm-4
             blockquote.tweet lang="en"
               p = tweet.text
-              footer
-                cite
-                  = mustdown t('.tweet_infos'), tweet
+      footer
+       cite
+        = mustdown t('.tweet_infos'), tweet

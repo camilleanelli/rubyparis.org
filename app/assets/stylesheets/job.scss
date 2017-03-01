@@ -3,16 +3,38 @@
 }
 
 .job {
+  padding: 5px;
   font-weight: normal;
-  height: 100px;
+  height: 200px;
   text-align: center;
+
 }
+
+.boxes-job {
+  padding: 5px;
+  color: black;
+  // border: 1px solid #EEEEEE;
+  height: 100%;
+  // border-radius: 5px;
+  &:hover,
+  &:focus,
+  &:active {  
+    color: black;
+    background-color: #EEEEEE;
+  }
+}
+
 
 .job-link {
   &,
   &:active,
   &:focus,
   &:hover {
-    color: #5D2026;
+    text-decoration: none;
+    color: black;
   }
+}
+
+.logo-jobs {
+  height: 100px;
 }

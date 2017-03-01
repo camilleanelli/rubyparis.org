@@ -1,0 +1,25 @@
+.picture
+  .filter
+    .title-welcome.col-sm-8 
+    .col-sm-4.next-meetup.slideLeft
+      .col-xs-9.col-sm-12
+        .col-xs-12
+          .col-xs-2.text-right.padding-small
+            = image_tag "rubyicon.svg", height: 30
+          .col-xs-10
+              h2.address-meetup Prochain Meetup
+          
+          .col-xs-12
+            p <i class="fa fa-calendar" aria-hidden="true"></i> mardi 7 mars 
+            p <i class="fa fa-clock-o" aria-hidden="true"></i> 19h15
+            p Campus numérique Ionis
+            p 95 avenue Parmentier
+            p 75011
+            p = link_to "<i class='fa fa-map-marker' aria-hidden='true'></i> Voir le plan".html_safe, "https://www.google.com/maps/place/95+Avenue+Parmentier,+75011+Paris,+France/@48.866096,2.3711066,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66de3566a8a97:0xda12f1540347fd1d!8m2!3d48.866096!4d2.3732953?hl=en"  
+      .col-xs-3.col-sm-12.margin-top 
+        .col-sm-4
+          = link_to "<i class='fa fa-twitter' aria-hidden='true'></i>".html_safe, "https://twitter.com/parisrb?lang=fr"
+        .col-sm-4
+          = link_to "<i class='fa fa-github-alt' aria-hidden='true'></i>".html_safe, "https://github.com/parisrb"
+        .col-sm-4
+          = link_to "<i class='fa fa-meetup' aria-hidden='true'></i>".html_safe, "https://www.meetup.com/fr-FR/parisrb/?chapter_analytics_code=UA-24741027-2"

@@ -1,6 +1,10 @@
 /*
  *= require bootstrap_override
+ *= require bootstrap
+ *= require font-awesome
+ *= require animation
  *= require base
  *= require job
  *= require vimeo
  */
+

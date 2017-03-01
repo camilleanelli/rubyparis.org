@@ -1,9 +1,99 @@
+
+.picture {
+  width: auto;
+  height: 500px;
+  background-image: url(parisRB.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.filter {
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+  }
+
+.padding-small {
+  padding-top: 22px;
+}
+
+.next-meetup {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 20px;
+  color: white;
+  height: 100%;
+
+  a {
+    color: white ;
+    &:hover {
+      color: #c5424c;
+      text-decoration: none;
+    }
+  }
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.fa-twitter,
+.fa-github-alt, 
+.fa-meetup {
+  font-size: 50px;
+}
+
+.address-meetup {
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.btn-landingpage-red {
+  width: 150px;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  &:hover {
+    background-color: white;
+    color: #c5424c;
+    text-decoration: none;
+  }
+}
+
+.button-jobs {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btn-landingpage-white {
+  width: 150px;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #c5424c;
+  border-radius: 10px;
+  color: #c5424c;
+  &:hover {
+    background-color: #c5424c ;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.fa {
+  color: white;
+  &:hover {
+    color: #c5424c;
+  }
+}
+
 .main-content {
   font-weight: bold;
 
   h1, p {
     text-align: center;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+
   }
 
   form {
@@ -58,7 +148,7 @@ body > footer p {
 
 .section-guests,
 .section-page {
-  background-color: rgb(93, 32, 38);
+  background-color: #c5424c;
 }
 
 .section-ellipsis,
@@ -67,7 +157,7 @@ body > footer p {
 }
 
 .section-sponsors {
-  background-color: rgb(116, 39, 47);
+  background-color: #c5424c;
 }
 
 .section-talks {
@@ -87,13 +177,10 @@ body > footer p {
 }
 
 .block {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   font-size: 1.5em;
   margin-bottom: 1em;
   padding: 1em 15px 1em;
-
-  small {
+small {
     font-size: .7em;
   }
 }
@@ -138,3 +225,44 @@ body > footer p {
     display: block;
   }
 }
+
+footer {
+  
+  padding-top: 50px;
+  height: 100px;
+  a {
+    color: black;
+    &:hover {
+    text-decoration: none;
+    color: #c5424c;
+    }
+  }
+}
+
+
+ @media (min-width: 788px) {
+  .next-meetup p {
+    font-size: 18px;
+  }
+ }
+
+@media (max-width: 787px) {
+  .next-meetup p {
+        font-size: 14px;
+      }
+  .next-meetup {
+    height: 400px;
+  }
+  .margin-top {
+    margin-top: 20px;
+  }
+  .fa-twitter,
+  .fa-github-alt,
+  .fa-meetup {
+  font-size: 30px;
+  margin: 20px;
+  }
+}
+
+
+
