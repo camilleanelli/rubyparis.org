@@ -1,7 +1,7 @@
 
 .picture {
-  width: auto;
-  height: 500px;
+  width: 100%;
+  height: 35em;
   background-image: url(parisRB.jpg);
   background-position: center;
   background-size: cover;
@@ -9,7 +9,7 @@
 
 .filter {
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-color: transparent;
   }
 
@@ -19,10 +19,13 @@
 
 .next-meetup {
   background-color: rgba(0, 0, 0, 0.6);
-  padding-top: 20px;
+  padding-bottom: 0px;
   color: white;
   height: 100%;
-
+  p, strong {
+    font-size: 18px;
+  }
+  
   a {
     color: white ;
     &:hover {
@@ -32,20 +35,26 @@
   }
 }
 
-.margin-top {
-  margin-top: 50px;
+#map {
+  height: 150px;
+  background-color: black;
+  border-radius: 3px;
 }
 
+
+.icon-margin {
+  padding-top: 20px;
+}
 .fa-twitter,
 .fa-github-alt, 
 .fa-meetup {
-  font-size: 50px;
+  font-size: 3em;
 }
 
 .address-meetup {
-  margin-bottom: 30px;
-  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
+
 .btn-landingpage-red {
   width: 150px;
   height: 50px;
@@ -240,29 +249,8 @@ footer {
 }
 
 
- @media (min-width: 788px) {
-  .next-meetup p {
-    font-size: 18px;
-  }
- }
 
-@media (max-width: 787px) {
-  .next-meetup p {
-        font-size: 14px;
-      }
-  .next-meetup {
-    height: 400px;
-  }
-  .margin-top {
-    margin-top: 20px;
-  }
-  .fa-twitter,
-  .fa-github-alt,
-  .fa-meetup {
-  font-size: 30px;
-  margin: 20px;
-  }
-}
+
 
 
 
