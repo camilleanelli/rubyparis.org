@@ -2,6 +2,8 @@ require 'meetup/members_count'
 require 'net/http'
 
 class WelcomeController < ApplicationController
+
+
   layout "welcome"
   
   expose(:members_count) { Meetup::MembersCount.total }
@@ -31,5 +33,4 @@ class WelcomeController < ApplicationController
   expose(:sponsors) { Sponsor.visible }
   expose(:job_offers) { JobOffer.all }
   expose(:tweets) { Tweet.all }
-
 end
