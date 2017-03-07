@@ -4,7 +4,7 @@ html lang="fr"
     meta charset="utf-8"
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
     meta content="width=device-width, initial-scale=1.0" name="viewport"
-    <script async defer src="//maps.googleapis.com/maps/api/js?key=#{MAP_KEY}&callback=initMap" type="text/javascript"></script>
+    <script async defer src="//maps.googleapis.com/maps/api/js?key=#{ENV['MAP_KEY']}&callback=initMap" type="text/javascript"></script>
     = display_meta_tags reverse: true, site: t('site_name'), separator: '·'
     = stylesheet_link_tag 'application'
     = csrf_meta_tags
